@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's Club</title>
     <!-- Tailwind links -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Customize colors are here -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'para-color': '#ffffff99',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- CSS styles -->
-      <style>
-        .font-manrope{
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS styles -->
+    <style>
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
-
-      </style>
+    </style>
 </head>
-<body>
-    <header>   
+
+<body class="mx-auto ">
+    <header>
+
     </header>
-    <main>    
+    <main class="mx-auto">
+        <section class="ml-4 lg:ml-32 mt-4 lg:mt-16 banner relative width-[1170px]">
+            <div>
+                <!-- Taken from daisy -->
+                <div class="carousel width-[1170px]">
+                    <div id="slide1" class="carousel-item relative w-[1170px]">
+                        <img src="images/1.png" class="w-[1170px]" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Code -->
+                <div class="text-white bg-black h-[165px] p-8 w-[566px] rounded-2xl relative lg:absolute -right-72 lg:right-64 -bottom-12 lg:bottom-8">
+                    <h3 class="text-2 font-bold">Meet all the heroes from the field</h3>
+                    <p class="font-extralight para-color">Skating with grace, he conquers the ice, a hockey virtuoso,
+                        scoring victory with every exhilarating goal.</p>
+
+                </div>
+            </div>
+
+        </section>
 
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
